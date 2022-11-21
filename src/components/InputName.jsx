@@ -14,7 +14,7 @@ const dispatch = useDispatch();
   }
   return (
     <div className="bienvenida">
-      <h1>Please, input you name</h1>
+      <h1>Hi! Write you name</h1>
       <input
         type="text"
         onChange={(e) => setUsername(e.target.value)}

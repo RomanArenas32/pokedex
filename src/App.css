@@ -27,6 +27,40 @@ nav {
     color: white;
 }
 
+.t-stroke {
+    color: transparent;
+    -moz-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-color: #000000;
+    -webkit-text-stroke-color: #ffffff;
+}
+
+.t-shadow-halftone2 {
+    position: relative;
+}
+
+.t-shadow-halftone2::after {
+    content: "POKEMON";
+    font-size: 10rem;
+    letter-spacing: 0px;
+    background-size: 100%;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-stroke-width: 0;
+    -webkit-text-stroke-width: 0;
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    right: 0;
+    top: 0px;
+    z-index: -1;
+    background-color: #ff4c00;
+    transition: all 0.5s ease;
+    text-shadow: 10px 2px #d8b952;
+}
+
 img {
     height: 250px;
 }
@@ -43,13 +77,14 @@ img {
     font: bold 15px/1 arial;
     text-transform: uppercase;
     color: #c69c1e;
-    text-shadow: 0 2px 0 #41330a,
+    text-shadow: 0 5px 0 #41330a,
         0 4px 0 #41330a,
         0 6px 0 #41330a,
         0 8px 0 #41330a,
         0 10px 0 #41330a,
         0 12px 0 #41330a;
 }
+
 /*.logger{
     background-color: rgb(60, 134, 139);
     border-radius: 1rem;
@@ -92,9 +127,9 @@ footer {
     text-align: center;
     justify-content: center;
     font-size: 16px;
-   position: absolute;
-   width: 100%;
-   
+    position: absolute;
+    width: 100%;
+    bottom: inherit;
 }
 
 li {
@@ -133,4 +168,9 @@ input {
     height: 2.2rem;
     text-align: center;
     border-radius: 1rem;
+}
+select{
+    height: 50px;
+    width: 100px;
+    text-align: center;
 }
