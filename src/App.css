@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: rgb(70, 220, 223);
+    background: linear-gradient(220deg, rgba(70, 220, 223, 1) 63%, rgba(50, 168, 149, 1) 63%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+nav {
+    height: 100px;
+    background-color: rgb(60, 134, 139);
+    color: ivory;
+    display: grid;
+    place-items: center;
+    margin-bottom: 3rem;
+}
+
+.pokedex {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+img {
+    height: 250px;
+}
+
+.bienvenida {
+    border: 2px solid rgb(58, 75, 161);
+    height: 200px;
+    display: grid;
+    place-items: center;
+    width: 500px;
+    background-color: rgb(60, 134, 139);
+    border-radius: 1rem;
+    margin: auto;
+    font: bold 15px/1 arial;
+    text-transform: uppercase;
+    color: #c69c1e;
+    text-shadow: 0 2px 0 #41330a,
+        0 4px 0 #41330a,
+        0 6px 0 #41330a,
+        0 8px 0 #41330a,
+        0 10px 0 #41330a,
+        0 12px 0 #41330a;
+}
+/*.logger{
+    background-color: rgb(60, 134, 139);
+    border-radius: 1rem;
+    margin: auto;
+}*/
+.pokeCard {
+    height: 400px;
+    background-color: aqua;
+    width: 450px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1.5rem;
+    margin: auto;
+    box-shadow: 60px -16px teal;
+    padding: 2rem;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.name-poke {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(60, 134, 139);
+    color: ivory;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+   position: absolute;
+   width: 100%;
+   
+}
+
+li {
+    list-style: none;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+span {
+    font-weight: 700;
+}
+
+.search {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    height: 3rem;
+    width: 4rem;
+    border-radius: 2rem;
+
+}
+
+input {
+    height: 2.2rem;
+    text-align: center;
+    border-radius: 1rem;
+}
