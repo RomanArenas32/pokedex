@@ -6,10 +6,11 @@
 }
 
 html {
+    height: 100%;
     width: 100%;
     background: rgb(70, 220, 223);
     background: linear-gradient(220deg, rgba(70, 220, 223, 1) 63%, rgba(50, 168, 149, 1) 63%);
-    background-repeat: no-repeat;
+
 }
 
 body {
@@ -104,9 +105,12 @@ img {
     margin: auto;
     box-shadow: 60px -16px teal;
     padding: 2rem;
+    margin-bottom: 1rem;
 }
 
 .card {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -117,7 +121,8 @@ img {
         display: flex;
         flex-direction: column;
     }
-    .pokeCard{
+
+    .pokeCard {
         height: 320px;
         width: 320px;
     }
@@ -134,7 +139,6 @@ footer {
     color: ivory;
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -142,6 +146,17 @@ footer {
     position: absolute;
     width: 100%;
     bottom: inherit;
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+
+    .footer-contact {
+        font-size: 13px;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
 }
 
 li {
