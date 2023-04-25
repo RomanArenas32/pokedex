@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const PokedexDetails = ({ url }) => {
+export const PokedexDetails = ({ url }) => {
   const [poke, setPoke] = useState({});
 
   useEffect(() => {
@@ -19,4 +19,3 @@ const PokedexDetails = ({ url }) => {
   );
 };
 
-export default PokedexDetails;

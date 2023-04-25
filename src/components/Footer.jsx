@@ -1,4 +1,4 @@
-const Footer = () => {
+export  const Footer = () => {
   return (
     <footer>
       <ul className="footer-contact">
@@ -16,4 +16,3 @@ const Footer = () => {
   );
 };
 
-export default Footer;

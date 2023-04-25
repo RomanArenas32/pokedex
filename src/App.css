@@ -32,6 +32,7 @@ nav {
     display: flex;
     flex-direction: column;
     color: white;
+    align-items: center;
 }
 
 .t-stroke {
@@ -71,8 +72,15 @@ nav {
 img {
     height: 220px;
 }
-
+.inputName-contenedor{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    display: grid;
+    place-items: center;
+}
 .bienvenida {
+    max-width: 100%;
     border: 2px solid rgb(58, 75, 161);
     height: 200px;
     display: grid;
@@ -80,7 +88,8 @@ img {
     width: 350px;
     background-color: rgb(60, 134, 139);
     border-radius: 1rem;
-    margin: auto;
+    margin: 3.2rem;
+    align-items: center;
     font: bold 15px/1 arial;
     text-transform: uppercase;
     color: #c69c1e;
@@ -112,7 +121,7 @@ img {
     margin-top: 3rem;
     margin-bottom: 3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 }
 
@@ -134,7 +143,7 @@ img {
 }
 
 footer {
-    height: 100px;
+    height: 60px;
     background-color: rgb(60, 134, 139);
     color: ivory;
     display: flex;
@@ -146,7 +155,8 @@ footer {
     position: absolute;
     width: 100%;
     bottom: inherit;
-    margin-top: 4rem;
+    position: fixed;
+  bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -183,22 +193,127 @@ span {
     justify-content: center;
     gap: 1rem;
 }
+.input-texto {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+    font-size: 16px;
+    color: #333;
+    width: 200px;
+    margin-right: 10px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .input-texto:focus {
+    outline: none;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+.btn-wave {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .btn-wave:hover {
+    cursor: pointer;
+  }
+  
+  .btn-wave::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    transition: all 0.6s;
+  }
+  
+  .btn-wave:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn-wave:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    width: 200px;
+    height: 200px;
+  }
 
-button {
-    height: 3rem;
-    width: 4rem;
-    border-radius: 2rem;
 
-}
 
-input {
-    height: 2.2rem;
+/* Estilos para el select oculto */
+.custom-select select {
+    display: none;
+  }
+  
+  /* Estilos para el contenedor */
+  .custom-select {
     text-align: center;
-    border-radius: 1rem;
-}
-
-select {
+    position: relative;
+    width: 200px;
     height: 50px;
-    width: 100px;
-    text-align: center;
-}
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para la etiqueta */
+  .custom-select::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  /* Estilos para la flecha */
+  .custom-select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    z-index: 2;
+  }
+  
+  /* Estilos para las opciones */
+  .custom-select select option {
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+    border: none;
+  }
+  
+  /* Estilos para la opción seleccionada */
+  .custom-select select option:checked {
+    background: #ccc;
+    color: #fff;
+  }
+  
+  /* Estilos para la etiqueta cuando se selecciona una opción */
+  .custom-select select:focus ~ ::before {
+    transform: translateX(-150%);
+    background: #1abc9c;
+  }
+  

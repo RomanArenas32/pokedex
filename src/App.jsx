@@ -1,17 +1,12 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import InputName from "./components/InputName";
-import Pokedex from "./components/Pokedex";
-import PokedexId from "./components/PokedexId";
-import ProtectedRoutes from "./components/ProtectedRoutes";
-import './App.css';
-import Navar from "./components/Navar";
-import Footer from "./components/Footer";
+import {InputName, Footer, Pokedex, Navar, PokedexId, ProtectedRoutes} from "./components/";
+import "./App.css";
 
 
-function App() {
+export const App = ()=> {
   return (
     <HashRouter>
-    <Navar />
+      <Navar />
       <Routes>
         <Route path="/" element={<InputName />} />
         <Route element={<ProtectedRoutes />}>
@@ -19,10 +14,8 @@ function App() {
           <Route path="/pokedex/:id" element={<PokedexId />} />
         </Route>
       </Routes>
-        <Footer/>
+      <Footer />
     </HashRouter>
-  
   );
 }
 
-export default App;

@@ -1,4 +1,4 @@
-const Navar = ()=>{
+ export const Navar = ()=>{
 
     return(
         <nav>
@@ -7,4 +7,3 @@ const Navar = ()=>{
     )
 }
 
-export default Navar

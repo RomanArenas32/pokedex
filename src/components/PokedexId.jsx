@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const PokedexId = () => {
+export const PokedexId = () => {
   const [pokemonUniq, setPokemonUniq] = useState({});
 
   const {id} = useParams();
@@ -21,4 +21,3 @@ const PokedexId = () => {
   );
 };
 
-export default PokedexId;

@@ -2,9 +2,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import PokedexDetails from "./PokedexDetails";
+import {PokedexDetails} from "./";
 
-const Pokedex = () => {
+export const Pokedex = () => {
   const username = useSelector((state) => state.name);
 
   const [pokemon, setPokemon] = useState([]);
@@ -41,11 +41,12 @@ const Pokedex = () => {
           placeholder="Search pokemon"
           value={searchBy}
           onChange={(e) => setSearchBy(e.target.value)}
+          className="input-texto"
         />
-        <button className="search-button" onClick={searchPokemon}>
+        <button className="search-button btn-wave" onClick={searchPokemon}>
           Search
         </button>
-        <select onChange={changeType} name="" id="">
+        <select onChange={changeType} name="" id="" className="custom-select">
           {type.map((el) => (
             <option value={el.url} key={el.name}>
               {el.name}
@@ -64,4 +65,3 @@ const Pokedex = () => {
     </div>
   );
 };
-export default Pokedex;

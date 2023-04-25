@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { changeName } from "../store/slices/name.slice";
 
-const InputName = () => {
+export const InputName = () => {
   const [userName, setUsername] = useState("");
 
 const navigate = useNavigate(); 
@@ -13,16 +13,20 @@ const dispatch = useDispatch();
     navigate("/pokedex") //nos llevara a Pokedex.jsx
   }
   return (
-    <div className="bienvenida">
+    <div className="inputName-contenedor">
+    
+     <div className="bienvenida">
       <h1>Hi! Write you name</h1>
       <input
         type="text"
         onChange={(e) => setUsername(e.target.value)}
         value={userName}
+        className="input-texto"
       />
-      <button onClick={enterName}>enter</button>
+      <button onClick={enterName} className="btn-wave">enter</button>
     </div>
+    </div>
+   
   );
 };
 
-export default InputName;
