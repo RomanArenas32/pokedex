@@ -25,7 +25,7 @@ nav {
     color: ivory;
     display: grid;
     place-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .pokedex {
@@ -80,26 +80,33 @@ img {
     place-items: center;
 }
 .bienvenida {
-    max-width: 100%;
-    border: 2px solid rgb(58, 75, 161);
-    height: 200px;
-    display: grid;
-    place-items: center;
-    width: 350px;
-    background-color: rgb(60, 134, 139);
-    border-radius: 1rem;
-    margin: 3.2rem;
-    align-items: center;
-    font: bold 15px/1 arial;
-    text-transform: uppercase;
-    color: #c69c1e;
-    text-shadow: 0 5px 0 #41330a,
-        0 4px 0 #41330a,
-        0 6px 0 #41330a,
-        0 8px 0 #41330a,
-        0 10px 0 #41330a,
-        0 12px 0 #41330a;
+  max-width: 100%;
+  border: 2px solid rgb(58, 75, 161);
+  height: 200px;
+  display: grid;
+  place-items: center;
+  width: 550px;
+  background-color: rgb(60, 134, 139);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+  font: bold 20px/1 Arial;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s ease-in-out infinite alternate;
 }
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.05);
+  }
+}
+
 
 .pokeCard {
     height: 380px;
@@ -317,3 +324,47 @@ span {
     background: #1abc9c;
   }
   
+.container_btn{
+  position: absolute;
+  padding-left: 3rem;
+}
+
+  .boton-flotante {
+    
+    bottom: 20px;
+    right: 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    animation: pulse 2s ease-in-out infinite alternate;
+  }
+
+  .boton-flotante i {
+    animation: rotate 2s linear infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
