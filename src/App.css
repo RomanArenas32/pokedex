@@ -5,12 +5,16 @@
 
 }
 
-html {
-    height: 100%;
-    width: 100%;
-    background: rgb(70, 220, 223);
-    background: linear-gradient(220deg, rgba(70, 220, 223, 1) 63%, rgba(50, 168, 149, 1) 63%);
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  background: rgb(70, 220, 223);
+  background: linear-gradient(220deg, rgba(70, 220, 223, 1) 63%, rgba(50, 168, 149, 1) 63%);
 }
 
 body {
@@ -109,9 +113,9 @@ img {
 
 
 .pokeCard {
-    height: 380px;
+    height: 280px;
     background-color: aqua;
-    width: 380px;
+    width: 280px;
     margin: 1rem;
     display: flex;
     flex-direction: column;
