@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import {PokedexDetails} from "./";
+import { PokedexDetails} from "./";
 
 export const Pokedex = () => {
   const username = useSelector((state) => state.name);
@@ -10,6 +10,7 @@ export const Pokedex = () => {
   const [pokemon, setPokemon] = useState([]);
   const [searchBy, setSearchBy] = useState("");
   const [type, setType] = useState([]);
+
 
   const navigate = useNavigate();
   useEffect(() => {
@@ -29,7 +30,12 @@ export const Pokedex = () => {
     const valor = e.target.value;
     axios.get(valor).then((resp) => setPokemon(resp.data.pokemon));
   };
+
+
+  /* paginacion */
+  
   return (
+    <>
     <div className="pokedex">
       <div className="bienvenida">
         <h1>pokedex</h1>
@@ -63,5 +69,7 @@ export const Pokedex = () => {
         ))}
       </ul>
     </div>
+    </>
+    
   );
 };
