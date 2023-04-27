@@ -1,11 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -19,70 +20,72 @@ html {
 
 body {
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
 nav {
-    height: 100px;
-    background-color: rgb(60, 134, 139);
-    color: ivory;
-    display: grid;
-    place-items: center;
-    margin-bottom: 5rem;
+  height: 100px;
+  background-color: rgb(60, 134, 139);
+  color: ivory;
+  display: grid;
+  place-items: center;
+  margin-bottom: 5rem;
 }
 
 .pokedex {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
 }
 
 .t-stroke {
-    color: transparent;
-    -moz-text-stroke-width: 2px;
-    -webkit-text-stroke-width: 2px;
-    -moz-text-stroke-color: #000000;
-    -webkit-text-stroke-color: #ffffff;
+  color: transparent;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-color: #000000;
+  -webkit-text-stroke-color: #ffffff;
 }
 
 .t-shadow-halftone2 {
-    position: relative;
+  position: relative;
 }
 
 .t-shadow-halftone2::after {
-    content: "POKEMON";
-    font-size: 3rem;
-    letter-spacing: 0px;
-    background-size: 50%;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -moz-text-stroke-width: 0;
-    -webkit-text-stroke-width: 0;
-    position: absolute;
-    text-align: center;
-    left: 0px;
-    right: 0;
-    top: 60px;
-    z-index: -1;
-    background-color: #ff4c00;
-    transition: all 0.5s ease;
-    text-shadow: 10px 2px #d8b952;
+  content: "POKEMON";
+  font-size: 3rem;
+  letter-spacing: 0px;
+  background-size: 50%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-stroke-width: 0;
+  -webkit-text-stroke-width: 0;
+  position: absolute;
+  text-align: center;
+  left: 0px;
+  right: 0;
+  top: 60px;
+  z-index: -1;
+  background-color: #ff4c00;
+  transition: all 0.5s ease;
+  text-shadow: 10px 2px #d8b952;
 }
 
 img {
-    height: 220px;
+  height: 220px;
 }
-.inputName-contenedor{
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    display: grid;
-    place-items: center;
+
+.inputName-contenedor {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  display: grid;
+  place-items: center;
 }
+
 .bienvenida {
   max-width: 100%;
   border: 2px solid rgb(58, 75, 161);
@@ -101,6 +104,7 @@ img {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   animation: pulse 2s ease-in-out infinite alternate;
 }
+
 @media (max-width: 767px) {
   .bienvenida {
     max-width: 100%;
@@ -116,275 +120,284 @@ img {
 
 @keyframes pulse {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
+
   100% {
-      transform: scale(1.05);
+    transform: scale(1.05);
   }
 }
 
 
 .pokeCard {
-    height: 280px;
-    background-color: aqua;
-    width: 280px;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 1.5rem;
-    margin: auto;
-    box-shadow: 60px -16px teal;
-    padding: 2rem;
-    margin-bottom: 1rem;
+  height: 280px;
+  background-color: aqua;
+  width: 280px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1.5rem;
+  margin: auto;
+  box-shadow: 60px -16px teal;
+  padding: 2rem;
+  margin-bottom: 1rem;
 }
 
 .card {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 @media (max-width: 800px) {
-    .card {
-        display: flex;
-        flex-direction: column;
-    }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .pokeCard {
-        height: 320px;
-        width: 320px;
-    }
+  .pokeCard {
+    height: 320px;
+    width: 320px;
+  }
 }
 
 .name-poke {
-    text-transform: uppercase;
-    text-decoration: none;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 footer {
-    height: 60px;
-    background-color: rgb(60, 134, 139);
-    color: ivory;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 16px;
-    position: absolute;
-    width: 100%;
-    bottom: inherit;
-    position: fixed;
+  height: 60px;
+  background-color: rgb(60, 134, 139);
+  color: ivory;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+  position: absolute;
+  width: 100%;
+  bottom: inherit;
+  position: fixed;
   bottom: 0;
+  max-width: 100%;
 }
+
 @media (max-width: 767px) {
-  footer{
+  footer {
     font-size: 4px;
   }
 }
+
 @media (max-width: 768px) {
 
-    .footer-contact {
-        font-size: 13px;
-        margin: 1rem;
-        padding: 1rem;
-    }
+  .footer-contact {
+    font-size: 13px;
+    margin: 1rem;
+    padding: 1rem;
+  }
 
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .footer-contact {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .search {
-    margin: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
+
 .input-texto {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #eee;
-    font-size: 16px;
-    color: #333;
-    width: 200px;
-    margin-right: 10px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
-  }
-  
-  .input-texto:focus {
-    outline: none;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  font-size: 16px;
+  color: #333;
+  width: 200px;
+  margin-right: 10px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-texto:focus {
+  outline: none;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .btn-wave {
-    padding: 1em 2em;
-    font-size: 1.2em;
-    background-color: #2196f3;
-    color: #fff;
-    border: none;
-    border-radius: 3rem;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s;
-  }
-  .btn-wave:hover {
-    cursor: pointer;
-  }
-  
-  .btn-wave::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    width: 0;
-    height: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 100%;
-    transition: all 0.6s;
-  }
-  
-  .btn-wave:hover {
-    transform: scale(1.1);
-  }
-  
-  .btn-wave:hover::before {
-    transform: translate(-50%, -50%) scale(3);
-    width: 200px;
-    height: 200px;
-  }
+  padding: 1em 2em;
+  font-size: 1.2em;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 3rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.btn-wave:hover {
+  cursor: pointer;
+}
+
+.btn-wave::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  transition: all 0.6s;
+}
+
+.btn-wave:hover {
+  transform: scale(1.1);
+}
+
+.btn-wave:hover::before {
+  transform: translate(-50%, -50%) scale(3);
+  width: 200px;
+  height: 200px;
+}
 
 
 
 /* Estilos para el select oculto */
 .custom-select select {
-    display: none;
-  }
-  
-  /* Estilos para el contenedor */
-  .custom-select {
-    text-align: center;
-    position: relative;
-    width: 200px;
-    height: 50px;
-    border-radius: 25px;
-    border: 2px solid #ccc;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Estilos para la etiqueta */
-  .custom-select::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    background: #ccc;
-    transition: all 0.3s ease-in-out;
-    z-index: 1;
-  }
-  
-  /* Estilos para la flecha */
-  .custom-select::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 8px 5px 0 5px;
-    border-color: #fff transparent transparent transparent;
-    z-index: 2;
-  }
-  
-  /* Estilos para las opciones */
-  .custom-select select option {
-    font-size: 16px;
-    color: #333;
-    background: #fff;
-    border: none;
-  }
-  
-  /* Estilos para la opción seleccionada */
-  .custom-select select option:checked {
-    background: #ccc;
-    color: #fff;
-  }
-  
-  /* Estilos para la etiqueta cuando se selecciona una opción */
-  .custom-select select:focus ~ ::before {
-    transform: translateX(-150%);
-    background: #1abc9c;
-  }
-  
-.container_btn{
+  display: none;
+}
+
+/* Estilos para el contenedor */
+.custom-select {
+  text-align: center;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la etiqueta */
+.custom-select::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: #ccc;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+/* Estilos para la flecha */
+.custom-select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #fff transparent transparent transparent;
+  z-index: 2;
+}
+
+/* Estilos para las opciones */
+.custom-select select option {
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+  border: none;
+}
+
+/* Estilos para la opción seleccionada */
+.custom-select select option:checked {
+  background: #ccc;
+  color: #fff;
+}
+
+/* Estilos para la etiqueta cuando se selecciona una opción */
+.custom-select select:focus~ ::before {
+  transform: translateX(-150%);
+  background: #1abc9c;
+}
+
+.container_btn {
   position: absolute;
   padding-left: 3rem;
 }
 
-  .boton-flotante {
-    
-    bottom: 20px;
-    right: 20px;
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 25px;
-    cursor: pointer;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-    animation: pulse 2s ease-in-out infinite alternate;
+.boton-flotante {
+
+  bottom: 20px;
+  right: 20px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 25px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+.boton-flotante i {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
 
-  .boton-flotante i {
-    animation: rotate 2s linear infinite;
+  50% {
+    transform: scale(1.1);
   }
 
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
 
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
+}
