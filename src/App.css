@@ -101,6 +101,18 @@ img {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   animation: pulse 2s ease-in-out infinite alternate;
 }
+@media (max-width: 767px) {
+  .bienvenida {
+    max-width: 100%;
+    border: 2px solid rgb(58, 75, 161);
+    height: 270px;
+    display: grid;
+    place-items: center;
+    width: 300px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
 
 @keyframes pulse {
   0% {
@@ -169,7 +181,11 @@ footer {
     position: fixed;
   bottom: 0;
 }
-
+@media (max-width: 767px) {
+  footer{
+    font-size: 4px;
+  }
+}
 @media (max-width: 768px) {
 
     .footer-contact {
